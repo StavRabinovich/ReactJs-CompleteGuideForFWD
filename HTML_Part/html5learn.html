@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> Semantic Elements</title>
+
+    <style>
+      #header {
+        background-color: lightblue;
+        padding: 24px;
+      }
+      #navBar {
+        background-color: lightyellow;
+        padding: 8px;
+      }
+      #mainSection {
+        background-color: lightcyan;
+      }
+      #section {
+        background-color: lightgreen;
+        padding: 16px;
+      }
+      .article{
+        background-color: lightskyblue;
+        padding: 16px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+      }
+      #footer {
+        background-color: lavender;
+        padding: 12px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header id="header"> <!-- New semantic tag-->
+      <nav id="navBar"> <!-- Holds navigation menu -->
+        <span> Menu 1</span>
+        <span> Menu 2</span>
+        <span> Menu 3</span>
+      </nav>
+    </header>
+
+    <main id="mainSection">
+      <section id="section">
+        <article class="article">
+          <header> <!-- Article's title -->
+            <h3>Article Title 1</h3>
+            <a href="/">Author One Name</a>
+          </header>
+          <p>Lorem ipsum dolor sit amet, consectetur adip lorem ipsum dolor sit amet, consectetur adiporem ipsum dolor sit amet, consectetur adiporem ipsum dolor sit amet, consectetur adip</p>
+        </article>
+        <article class="article">
+          <header>
+          <h3>Article Title 2</h3>
+          <a href="/">Author Name</a>
+        </header>
+        <p>Lorem ipsum dolor sit amet, consectetur adip lorem ipsum dolor sit amet, consectetur adiporem ipsum dolor sit amet, consectetur adiporem ipsum dolor sit amet, consectetur adip</p>
+      </article>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <p> Copyright &copy; 2021</p>
+    </footer>
+
+  </body>
+</html>
