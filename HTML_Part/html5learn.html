@@ -30,6 +30,31 @@
         background-color: lavender;
         padding: 12px;
       }
+
+      table {
+        width: 650px;
+        background-color: azure;
+        margin-top: 24px;
+        margin-left: 24px;
+      }
+      table, td, th {
+        border: 1px solid black;
+        border-collapse: collapse;
+        font-size: 18px;
+      }
+      td, th {
+        padding: 12px;
+      }
+
+      .image-item{
+        width: 300px;
+        height: 200px;
+      }
+      .image-caption{
+        font-size: 18px;
+        margin-top: 8px;
+      }
+
     </style>
   </head>
 
@@ -61,6 +86,143 @@
       </section>
     </main>
 
+    <!-- New Semantic elements: Details and Summary
+    Will NOT work in explorer-->
+    <details>
+      <summary>This is a summary text</summary>
+      <p>This is a hidden text</p>
+    </details>
+    <details>
+      <summary>Chapter One</summary>
+      <p>This is intro chapter</p>
+    </details>
+    <details>
+      <summary>Chapter Two</summary>
+      <ul>
+        <li>Headings</li>
+        <li>Paragraphs</li>
+        <li>links</li>
+      </ul>
+    </details>
+    <details>
+      <summary>Chapter Three</summary>
+      <a href="https://www.linkedin.com/in/stav-rabinovich/">Stav's Linkedin</a>
+    </details>
+    <details>
+      <summary>Chapter Four</summary>
+      <p>This is a hidden text</p>
+    </details>
+
+    <!-- Tables -->
+    <table>
+      <caption>Table of Contents</caption>
+      <tr> <!-- Row -->
+        <td rowspan="6" >Hours</td><!--Row Merge-->
+        <td>Sunday</td> <!--Cell-->
+        <td>Monday</td> <!--Cell-->
+        <td>Tuesday</td> <!--Cell-->
+        <td>Wednesday</td> <!--Cell-->
+        <td>Thursday</td> <!--Cell-->
+      </tr>
+      <tr> <!-- Row -->
+        <td>Science</td> <!--Cell-->
+        <td>Maths</td> <!--Cell-->
+        <td>Art</td> <!--Cell-->
+        <td>English Lit</td> <!--Cell-->
+        <td>Sports</td> <!--Cell-->
+      </tr>      
+      <tr> <!-- Row -->
+        <td>English Lit</td> <!--Cell-->
+        <td>Science</td> <!--Cell-->
+        <td>Sports</td> <!--Cell-->
+        <td>Art</td> <!--Cell-->
+        <td>Maths</td> <!--Cell-->
+      </tr>
+      <tr> <!-- Row -->
+        <td colspan="5" style="text-align:center">Lunch Break</td>
+      </tr>
+      <tr> <!-- Row -->
+        <td>Science</td> <!--Cell-->
+        <td>English Lit</td> <!--Cell-->
+        <td>Maths</td> <!--Cell-->
+        <td>Maths</td> <!--Cell-->
+        <td>Sports</td> <!--Cell-->
+      </tr>
+      <tr> <!-- Row -->
+        <td>English Lit</td> <!--Cell-->
+        <td>Art</td> <!--Cell-->
+        <td>Science</td> <!--Cell-->
+        <td>Sports</td> <!--Cell-->
+        <td>Maths</td> <!--Cell-->    
+      </tr>
+    </table>
+
+    <table>
+      <caption>Beautiful Places to Visit</caption>
+      <tr>
+        <td>
+          <div>
+            <img class="image-item" src="https://image.freepik.com/free-photo/view-new-york-city-manhattan-midtown-dusk-with-skyscrapers-illuminated-east-river_268835-791.jpg" alt="NYC, USA"/>
+            <p class="image-caption">New York City, USA</p>
+          </div>
+        </td>
+        <td>
+          <div>
+            <img class="image-item" src="https://image.freepik.com/free-photo/scenic-view-city-night_198523-18.jpg" alt="Toronto, Canada"/>
+            <p class="image-caption">Toronto, Canada</p>
+          </div>
+        </td>
+        <td>
+          <div>
+            <img class="image-item" src="https://image.freepik.com/free-photo/parliament-building-danube-budapest_181624-50167.jpg" alt="Budapest, Hungary"/>
+            <p class="image-caption">Budapest, Hungary</p>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div>
+            <img class="image-item" src="https://image.freepik.com/free-photo/big-ben-westminster-bridge-sunset-london-uk_268835-1395.jpg" alt="London, UK"/>
+            <p class="image-caption">London, UK</p>
+          </div>
+        </td>
+        <td>
+          <div>
+            <img class="image-item" src="https://image.freepik.com/free-photo/beautiful-outdoor-tropical-beach-sea-around-samui-island-with-coconut-palm-tree-other-sunset-time_74190-9034.jpg" alt="Ko Samui, Thailand"/>
+            <p class="image-caption">Ko Samui, Thailand</p>
+          </div>
+        </td>
+        <td>
+          <div>
+            <img class="image-item" src="https://image.freepik.com/free-photo/asian-city-panoramic-view_1107-46.jpg" alt="Jerusalem, Israel"/>
+            <p class="image-caption">Jerusalem, Israel</p>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div>
+            <img class="image-item" src="https://cdn.pixabay.com/photo/2018/08/21/11/42/tel-aviv-3621085_960_720.jpg" alt="Tel Aviv, Israel"/>
+            <p class="image-caption">Tel Aviv, Israel</p>
+          </div>
+        </td>
+        <td>
+          <div>
+            <img class="image-item" src="https://cdn.pixabay.com/photo/2019/02/16/23/47/berlin-4001319_960_720.jpghttps://cdn.pixabay.com/photo/2019/02/16/23/47/berlin-4001319_960_720.jpg" alt="Berlin, Germany"/>
+            <p class="image-caption">Berlin, Germany</p>
+          </div>
+        </td>
+        <td>
+          <div>
+            <img class="image-item" src="https://cdn.pixabay.com/photo/2019/05/26/18/27/bridge-4230946_960_720.jpg" alt="Amsterdam, Netherlands"/>
+            <p class="image-caption">Amsterdam, Netherlands</p>
+          </div>
+        </td>
+      </tr>
+    </table>
+
+    
+    <br/><br/>
     <footer id="footer">
       <p> Copyright &copy; 2021</p>
     </footer>
