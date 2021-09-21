@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Practice Tables</title>
+    <style>
+      table {
+        width: 700px;
+        margin-top: 24px;
+        text-align:center; 
+        Font-size:16px; 
+        margin-left: auto; 
+        margin-right: auto;
+        border-collapse: collapse;
+        border: 2px solid lightgray;
+      }
+      td, th {
+        padding: 12px;
+        border: 2px solid lightgray;
+        border-collapse: collapse;
+      }
+      .head-cell{
+        background-color: lightskyblue;
+        font-size: 18px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <caption>Practice Tables</caption>
+      <tr class="head-cell">
+        <td colspan="3">Invoice #1234ABC</td>
+        <td>September 20th, 2021</td>
+      </tr>
+      <tr>
+        <td colspan="2"><div><p>
+          <b>Pay To:</b><br/>
+          Avi Aviv<br/>
+          203 Pinsker Street<br/>
+          Tel Aviv, Israel - 123456
+        </p></div></td>
+        <td colspan="2"><div><p>
+          <b>Customer:</b><br/>
+          Eli Elisha<br/>
+          203 Hashalom Street<br/>
+          Haifa, Israel - 543211
+        </p></div></td>
+      </tr>
+      <tr class="head-cell">
+        <td>Name / Description:</td>
+        <td>Qty.</td>
+        <td>MRP</td>
+        <td>Summary</td>
+      </tr>
+      <tr>
+        <td>Biryani</td>
+        <td>3</td>
+        <td>400</td>
+        <td>1200</td>
+      </tr>
+      <tr>
+        <td>Chocolate Shake</td>
+        <td>2</td>
+        <td>200</td>
+        <td>400</td>
+      </tr>
+      <tr>
+        <td class="head-cell" colspan="3">Subtotal:</td>
+        <td>1600</td>
+      </tr>
+      <tr>
+        <td class="head-cell" colspan="2">Tax</td>
+        <td>10%</td>
+        <td>160</td>
+      </tr>
+      <tr>
+        <td class="head-cell" colspan="3">Grand Total:</td>
+        <td>1760 NIS</td>
+      </tr>
+
+    </table>
+  </body>
+</html>
