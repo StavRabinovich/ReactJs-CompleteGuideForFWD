@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Intro to HTML Form</title>
+    <style>
+      #registerForm {
+        width: 300px;
+        background-color: white;
+        padding: 24px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .input-lable {
+        margin: 0;
+        margin-top: 12px;
+        margin-bottom: 4px;
+      }
+      .input-item{
+        width: 100%;
+      }
+      #terms-check {
+        margin-top: 12px;
+        margin-bottom: 18px;
+      }
+    </style>
+  </head>
+  <body style="background-color: lightblue;">
+    <h1 style="text-align: center;">Signup Form</h1>
+    <form id="registerForm" method="GET">
+      <div>
+        <p class="input-lable">Full Name:</p>
+        <input class="input-item" type="text" name="full-name"><br/>
+      </div>
+     
+      <div>
+        <p class="input-lable">Email:</p>
+        <input class="input-item" type="email" name="email"><br/>
+      </div>
+      
+      <div>
+        <p class="input-lable">Password:</p>
+        <input class="input-item" type="password" name="password"><br/>
+      </div>
+      
+      <div>
+        <p class="input-lable">Confirm Password: </p>
+        <input class="input-item" type="password" name="confirm-password"><br/>
+      </div>
+
+      <div>
+        <p class="input-lable">Gender: </p>
+        <input type="radio" name="male" value="male">Male</input>
+        <input type="radio" name="female" value="female">Female</input>
+        <input type="radio" name="other" value="other">Other</input>
+      </div>
+
+      <div>
+        <p class="input-lable">Security Question:</p>
+        <select class="input-item" name="security-question">
+          <option value="first-pet">What was your first pet name?</option>
+          <option value="first-job">What was your first job?</option>
+          <option value="nickname">What is your nickname?</option>
+        </select>
+      </div>
+
+      <div>
+        <textarea class="input-item" name="answer" rows="6" cols="32"></textarea>
+      </div>
+
+      <div>
+        <br>
+        <input id="terms-check" type="checkbox" name="terms-conditions" value="accept"> I agree to accept the terms and conditions</input>
+      </div>
+
+      <input class="input-item" type="submit" name="submit">
+    </form>
+  </body>
+</html>
